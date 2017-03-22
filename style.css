@@ -1,0 +1,21 @@
+ul{list-style: none;}
+*{margin:0px;padding:0px;}
+.logo{
+    margin-top: 60px;
+    text-align: center;
+    }
+.logo > img{
+    width:74px;
+    height:74px;
+    border-radius: 50%;}
+.logo >ul {}
+.logo > ul > li{}
+.best_love{}
+.best_love > h2{}
+.best_love > p{}
+.player{}
+.player > ul{}
+.player > ul >li{}
+.player img {}
+.player >ul >li >h3{}
+.player >ul >li >p{}
