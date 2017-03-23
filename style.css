@@ -27,11 +27,23 @@ ul{list-style: none;}
     text-align: center;
     padding-bottom: 50px;
  }
-.best_love > .star{
+.best_love  .two_star{
     padding-top: 56px;
     margin-bottom: 35px;
 }
-.best_love > .star > h2{
+.best_love .one_star{
+    display: none;
+}
+.best_love .one_star h2{
+    background:#D8D8D8;  
+    max-width: 376px;
+    line-height: 38px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
+}
+.best_love  .two_star  h2{
     margin-left: auto;
     margin-right: auto;
     background:#D8D8D8;   
@@ -39,7 +51,9 @@ ul{list-style: none;}
     margin-bottom: 20px;
     border-radius: 14px;
     line-height: 40px;
+
     }
+
 .best_love > p{
     background: #E8E7E7;
     max-width: 250px;
@@ -48,18 +62,64 @@ ul{list-style: none;}
     border-radius: 14px;
     margin-bottom: 20px;
     line-height: 25px;}
+@media (min-width:768px){
+    .best_love{padding-bottom: 82px;}
+    .best_love  .two_star{display: none;}
+    .best_love  .one_star{display: block;padding-top: 76px;}
+    .best_love > p {
+        max-width: 534px;
+        line-height: 23px;
+    }
+}
 .player{margin: 0 16px;}
 .player > ul{
     margin-top: 42px;
 }
 .player > ul >li{
-    
+    margin-bottom: 32px;
 }
 .player > ul >li > img {
-    /*min-width: 288px;*/
-    min-width:100%;
+    max-width:100%;
+    border-radius: 14px;
 }
 .player >ul >li >h3{
-
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 24px;
+    background-color:#bcbcbc;
+    max-width: 205px;
+    border-radius: 4px;
 }
-.player >ul >li >p{}
+.player >ul >li >p{
+    background: #ececec;
+    line-height: 15px;
+    border-radius: 4px;
+}
+@media (min-width:768px){
+    .player > ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    .player > ul li{
+        width: 50%;
+        max-width: 360px;
+    }
+@media (min-width:1024px){
+    .player{
+        max-width: 980px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .player > ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    .player > ul li{
+       width: 31%;
+       max-width: 300px;
+}
+}
